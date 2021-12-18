@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" content="text/html; http-equiv=" content-type">
+  <title>CAP France</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <!--j'apelle mon doc de style css-->
+</head>
+
+<body>
+  <div id="navbar">
+    <div id="entete">
+      <div id="logo-cap">
+        <a href="acceuil2.html"><img src="image/icon_cap.png" style="height: 90px" /></a>
+      </div>
+      <div id="image-moncompte">
+        <a href="moncompte.html"><img src="image/moncompte.png" style="height: 30px" /></a>
+      </div>
+    </div>
+
+
+    <div class="header">
+      <nav>
+        <ul class="menu">
+          <li><a href="acceuil2.html">Accueil</a></li>
+          <li><a href="boutique.html">Boutique</a>
+            <ul id="submenu">
+              <li><a href="boutiqueH.html">Homme</a></li>
+              <li><a href="boutiqueF.html">Femme</a></li>
+              <li><a href="boutiqueA.html">Accessoires</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="plan.html">Plan de course</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <hr size="4" align="left" width="100%" color="orange" />
+    <!--ligne blanche-->
+  </div>
+    <br />
+    <h2 style="text-align: center">
+      Vous voulez nous rejoindre ? Remplisser le formulaire ci-dessous !
+    </h2>
+    <br />
+    <br />
+    <div id="bloc-inscription">
+      <form id="connexion">
+        <label for="email">Adresse mail :</label>
+        <br />
+        <input type="text" name="email" size="20" maxlength="40" value="" />
+        <br />
+        <br />
+        <label for="ID">Nom d'utilisateur :</label>
+        <br />
+        <input type="text" name="ID" size="20" maxlength="40" value="" />
+        <br />
+        <br />
+        <label for="MDP">Mot de passe :</label>
+        <br />
+        <input type="password" name="MDP" size="20" maxlength="40" value="" />
+        <br />
+        <br />
+        <label for="MDP">Confirmez votre mot de passe :</label>
+        <br />
+        <input type="password" name="MDP" size="20" maxlength="40" value="" />
+        <br />
+        <br />
+        Voulez vous restez connecter ?<input
+          type="checkbox"
+          name="Accepter"
+          value="on"
+        />
+        <br />
+        <br />
+        <a href="acceuil.html"><input id="submit" type="submit" value="S'inscrire" /></a>
+      </form>
+      
+    </div>
+    <hr size="4" color="white" align="left" width="100%" />
+    <!--ligne blanche-->
+
+    <div id="bas">
+      © CAP - <a href="mention.html" style="color: #ff7300"> Mention Légal</a>
+      <br />
+      Tous droit reservé.
+    </div>
+    <script src="JavaScript/connexion.js"></script>
+  </body>
+</html>

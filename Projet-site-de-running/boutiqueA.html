@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" content="text/html; http-equiv=" content-type">
+  <title>CAP France</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <!--j'apelle mon doc de style css-->
+</head>
+
+<body>
+  <div id="navbar">
+    <div id="entete">
+      <div id="logo-cap">
+        <a href="acceuil2.html"><img src="image/icon_cap.png" style="height: 90px" /></a>
+      </div>
+      <div id="image-moncompte">
+        <a href="moncompte.html"><img src="image/moncompte.png" style="height: 30px" /></a>
+      </div>
+    </div>
+
+
+    <div class="header">
+      <nav>
+        <ul class="menu">
+          <li><a href="acceuil2.html">Accueil</a></li>
+          <li><a href="boutique.html">Boutique</a>
+            <ul id="submenu">
+              <li><a href="boutiqueH.html">Homme</a></li>
+              <li><a href="boutiqueF.html">Femme</a></li>
+              <li><a href="boutiqueA.html">Accessoires</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="plan.html">Plan de course</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <hr size="4" align="left" width="100%" color="orange" />
+    <!--ligne blanche-->
+  </div>
+    <table id="table" border="0" cellpadding="13" cellspacing="0">
+      <tbody>
+        <tr>
+          <td>
+            <div id="produit">
+              <a href="produit/gourde.html">
+                <img src="image/gourde.jpg" style="border-radius: 8px" />
+              </a>
+              <p>
+                <br />
+                -Gourde - 9.99€
+                <br /><br />
+               Gourde etanche sans aucun rique de fuite !
+                égale ! <br /><br />
+              </p>
+              <form
+                id="bouton-maillot"
+                style="
+                  margin-left: auto;
+                  margin-right: auto;
+                  padding-bottom: 15px;
+                "
+              >
+                <input
+                  id="submit"
+                  type="submit"
+                  value="Ajouter au panier"
+                  action=""
+                />
+                <select type="civilité" name="civilité">
+                    <option value="1" selected>Contenance</option>
+                    <option value="1">500ml</option>
+                    <option value="2">1L</option>
+                  </select>
+              </form>
+            </div>
+          </td>
+
+          <td>
+            <div id="produit">
+              <a href="produit/bandeaux.html">
+                <img
+                  src="image/bandeau.jpg"
+                  align="center"
+                  style="border-radius: 8px"
+                />
+              </a>
+              <p>
+                <br />
+                -Bandeaux running- 4.99€
+                <br /><br />
+                bandeaux absorbant ideal et <br>
+                indispensable pour une bonne <br>seance de running 
+              </p>
+              <form
+                id="bouton-maillot"
+                style="
+                  margin-left: auto;
+                  margin-right: auto;
+                  padding-bottom: 15px;
+                "
+              >
+                <input
+                  id="submit"
+                  type="submit"
+                  value="Ajouter au panier"
+                  action=""
+                />
+                <select type="civilité" name="civilité">
+                  <option value="1" selected>Taille</option>
+                  <option value="1">XS</option>
+                  <option value="2">S</option>
+                  <option value="3">M</option>
+                  <option value="4">L</option>
+                  <option value="5">XL</option>
+                </select>
+              </form>
+            </div>
+          </td>
+
+          <td>
+            <div id="produit">
+              <a href="produit/montre.html">
+                <img
+                  type="chaussure"
+                  src="image/montre.jpg"
+                  align="center"
+                  style="border-radius: 8px"
+                />
+              </a>
+              <p>
+                <br />
+                -Montre connecter- 129.99€
+                <br /><br />
+                montre connecter etanche, <br>utile pour 
+                suivre votre <br>progression et tout 
+                autre <br>parametre interessant comme 
+                la frequence cardiaque ect
+                <br /><br />
+              </p>
+              <form
+                id="bouton-maillot"
+                style="
+                  margin-left: auto;
+                  margin-right: auto;
+                  padding-bottom: 15px;
+                "
+              >
+                <input
+                  id="submit"
+                  type="submit"
+                  value="Ajouter au panier"
+                  action=""
+                />
+                
+              </form>
+            </div>
+          </td>
+
+          <td>
+            <div id="produit">
+              <a href="produit/bracelet.html">
+                <img
+                  src="image/bracelet.jfif"
+                  align="center"
+                  style="border-radius: 8px"
+                />
+              </a>
+              <p>
+                <br />
+                -Bracelet absorbant- 4.99€
+                <br /><br />
+                rester au sec avec cette article simple mais trés utile
+              </p>
+              <form
+                id="bouton-maillot"
+                style="
+                  margin-left: auto;
+                  margin-right: auto;
+                  padding-bottom: 15px;
+                "
+              >
+                <input
+                  id="submit"
+                  type="submit"
+                  value="Ajouter au panier"
+                  action=""
+                />
+                
+              </form>
+            </div>
+          </td>
+        </tr>
+        <tr></tr>
+      </tbody>
+    </table>
+
+    
+
+    <hr size="4" color="white" align="left" width="100%" />
+    <!--ligne blanche-->
+
+    <div id="bas">
+      © CAP - <a href="mention.html" style="color: #ff7300"> Mention Légal</a>
+      <br />
+      Tous droit reservé.
+    </div>
+    <script src="JavaScript/ajout-panier.js"></script>
+  </body>
+</html>

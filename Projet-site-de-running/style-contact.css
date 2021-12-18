@@ -1,0 +1,116 @@
+body {
+  color: rgb(235, 235, 235); /*couleur du text */
+  text-shadow: 2px 2px 5px rgb(0, 0, 0); /*ombre du text */
+  font-size: larger; /*taille de police */
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background: url(image/background1.jpg) no-repeat center fixed; /*je definie l'image au centre fixe et sans repition */
+  -webkit-background-size: cover; /*l'image prend tout la page */
+  background-size: cover; /*l'image prend tout la page */
+}
+/*debut de la barre onglet */
+.header {
+  background: linear-gradient(#585858, #131313);
+  height: 50px;
+  width: 100%;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px;
+  width: 250px; /*je donne 250 pixel d'ecart entre chaque lien */
+  transition: 0.5s; /*transition de 0.5 second pour grossir la case*/
+}
+nav ul li:hover  /*fonction hover pour le sur l'onglet passage de souris*/ {
+  width: 230px;
+  transition: 0.5s; /*transition de 0.5 seconde pour retrecir la case de 250px a 230px*/
+}
+ul li a {
+  color: seashell;
+  text-decoration: none;
+  transition: 0.5s; /*temp pour executer tout ça*/
+}
+ul li a:hover {
+  color: rgb(255, 123, 0); /*couleur du text au passage de la souris*/
+  background: rgba(
+    255,
+    225,
+    255,
+    0.1
+  ); /*couleur de l'arriere plan au passage de la souris*/
+  border-bottom: 4px solid rgba(255, 255, 255, 0.8); /*ligne blanche dans l'onglet*/
+  font-size: x-large; /*le taille du texte quand la souris passe dessus */
+  transition: 0.5s; /*temp pour executer tout ça*/
+}
+.menu li {
+  float: left;
+}
+.menu li a {
+  color: seashell;
+  text-decoration: none; /*j'enleve le soulignement des liens */
+  display: block;
+  line-height: 46px;
+  text-align: center; /*tu aligne le texte dans les onglet*/
+}
+#search {
+  padding: 12px;
+  text-align: right;
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+input {
+  font-size: 17px;
+}
+input[type="submit"]:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 123, 0);
+  transition: 0.3s;
+}
+input[type="search"]:hover {
+  transition: 0.3s;
+  border-color: rgb(255, 123, 0);
+}
+/*fin de la barre onglet*/
+
+#form {
+  margin-left: 10px;
+  font-size: 17px;
+}
+input {
+  transition: 0.3s;
+  text-align: left;
+}
+input:hover {
+  border-color: rgb(255, 123, 0);
+  background-color: rgb(233, 208, 184);
+  transition: 0.3s;
+  font-size: 18px;
+}
+input[type="reset"]:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 123, 0);
+  transition: 0.3s;
+}
+select {
+  font-size: 17px;
+  transition: 0.3s;
+}
+select:hover {
+  background-color: rgb(233, 208, 184);
+  border-color: rgb(255, 123, 0);
+  transition: 0.3s;
+}
+input[type="checkbox"] {
+  font-size: 30px;
+}
+input[type="checkbox"]:hover {
+  border-color: rgb(255, 123, 0);
+}

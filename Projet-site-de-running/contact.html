@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" content="text/html; http-equiv=" content-type">
+  <title>CAP France</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <!--j'apelle mon doc de style css-->
+</head>
+
+<body>
+
+  <script src="JavaScript/contact.js"></script>
+
+  <div id="navbar">
+    <div id="entete">
+      <div id="logo-cap">
+        <a href="acceuil2.html"><img src="image/icon_cap.png" style="height: 90px" /></a>
+      </div>
+      <div id="image-moncompte">
+        <a href="moncompte.html"><img src="image/moncompte.png" style="height: 30px" /></a>
+      </div>
+    </div>
+
+
+    <div class="header">
+      <nav>
+        <ul class="menu">
+          <li><a href="acceuil2.html">Accueil</a></li>
+          <li><a href="boutique.html">Boutique</a>
+            <ul id="submenu">
+              <li><a href="boutiqueH.html">Homme</a></li>
+              <li><a href="boutiqueF.html">Femme</a></li>
+              <li><a href="boutiqueA.html">Accessoires</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="plan.html">Plan de course</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <hr size="4" align="left" width="100%" color="orange" />
+    <!--ligne blanche-->
+  </div>
+    <br>
+    <div id="formulaire">
+        <h3>s'incrire a la newsletter</h3>
+
+
+
+        <form id="form" name="Form" action="" method=post enctype="text/plain">
+
+            <SELECT type="civilite" NAME="civilite" id="civilite">
+                <OPTION VALUE="0" SELECTED>Civilité</OPTION>
+                <OPTION VALUE="1">Homme</OPTION>
+                <OPTION VALUE="2">Femme</OPTION>
+                <OPTION VALUE="3">Non spécifié</OPTION>
+            </SELECT>
+            <BR>
+            <br>
+            <label for="fname">Prénom :</label>
+            <br>
+            <input type="text" name="Prenom" size=20 maxlength=40 value="">
+            <BR>
+            <br>
+            <label for="lname">Nom :</label>
+            <br>
+            <input type="text" name="Nom" size=20 maxlength=40 value="">
+            <BR>
+            <br>
+            <label for="email">Email :</label>
+            <br>
+            <input type="text" name="Email" size=30 maxlength=40 placeholder="nom@provider.domaine">
+            <BR>
+            <br>
+            <label for="adress">Adresse :</label>
+
+            <br>
+            <input type="text" name="Adresse" size=30 maxlength=75 value="">
+            <label for="cpostal">Code postal :</label>
+
+            <input type="number" name="Code postal" size=5 requiredmaxlength="5" value="">
+            <BR>
+            <br>
+            <label for="ville">Ville :</label>
+            <br>
+            <input type="text" name="Ville" size=30 maxlength=40 value="">
+            <BR>
+            <br>
+
+            Acceptez vous de vous inscrir la newsletter ?<input type="checkbox" id="check" NAME="Accepter" VALUE="ON">
+            <BR>
+            <br>
+            <input id="submit" type="button" value="Envoyer" onclick="verifFormulaire();">
+            <input type="reset" value="Annuler">
+        </form>
+
+        <br>
+        <hr size="4" color="white" align=left width="100%">
+        <div id="bas">
+
+            © CAP - <a href="mention.html" style="color:#ff7300;"> Mention Legal</a>
+            <br>
+            Tous droit reservé.
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

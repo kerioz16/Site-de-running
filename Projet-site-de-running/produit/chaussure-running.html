@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" content="text/html; http-equiv=" content-type">
+    <title>CAP France</title>
+    <link rel="stylesheet" href="../style.css" type="text/css" />
+    <!--j'apelle mon doc de style css-->
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+    ></script>
+
+    <script type="text/javascript" src="../JavaScript/zoom.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        //fire on DOM ready
+        $("#myimage").addpowerzoom();
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="entete">
+      <div id="logo-cap">
+        <a href="../acceuil2.html"
+          ><img src="../image/icon_cap.png" style="height: 90px" 
+          /></a>       
+      <div id="image-moncompte">
+        <a href="../moncompte.html"
+          ><img src="../image/moncompte.png" style="height: 30px"
+        /></a>
+      </div>
+    </div>
+    <div class="header">
+      <nav>
+        <ul class="menu">
+          <li><a href="../acceuil2.html">Accueil</a></li>
+          <li><a href="boutique.html">Boutique</a>
+            <ul id="submenu">
+              <li><a href="../boutiqueH.html">Homme</a></li>
+              <li><a href="../boutiqueF.html">Femme</a></li>
+              <li><a href="../boutiqueA.html">Accessoires</a></li>
+            </ul>
+          </li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../plan.html">Plan de course</a></li>
+          <li><a href="../support.html">Support</a></li>
+        </ul>
+
+        
+      </nav>
+    </div>
+
+    <hr size="4" align="left" width="100%" color="orange" />
+    <!--ligne blanche-->
+
+    <h2>Chaussure de sport</h2>
+
+    <div id="produit">
+      <div id="image-produit">
+        <img
+          id="myimage"
+          src="../image/chaussure1.jpg"
+          style="width: 450px; height: 400px"
+        />
+      </div>
+      <div id="text">
+        <h3>49.99€</h3>
+        <br />
+
+        Chaussure de running specialisé dans le road running et d'une legèreté à
+        toutes épreuves
+        <ul>
+          <li>Plaque en carbone qui augmente le retour énergétique</li>
+          <li>Chaussure de route ultra légère</li>
+          <li>Mousse ultra légère et réactive</li>
+          <li>Forme Rocker qui augmente l'éfficacité de la course</li>
+          <li>Tige en maille ultra légère</li>
+        </ul>
+
+        <br />
+        <br />
+
+        <div id="bouton-maillot">
+          <form id="form">
+            <select id="bouton-produit" type="taille" name="taille">
+              <option value="1" selected>Pointure</option>
+              <option value="1">38</option>
+              <option value="2">39</option>
+              <option value="3">40</option>
+              <option value="4">40.5</option>
+              <option value="5">41</option>
+              <option value="6">41.5</option>
+              <option value="7">42</option>
+              <option value="8">43</option>
+              <option value="9">44</option>
+            </select>
+            <select id="bouton-produit" type="civilité" name="couleur">
+              <option value="1" selected>couleur</option>
+              <option value="1">bleu-ciel</option>
+              <option value="2">bleu</option>
+              <option value="3">bleu-nuit</option>
+              <option value="4">jaune</option>
+              <option value="5">rouge</option>
+              <option value="5">orange</option>
+              <option value="5">gris</option>
+              <option value="5">vert</option>
+              <option value="5">violet</option>
+            </select>
+            <input id="submit" type="submit" value="Ajouter au panier" />
+          </form>
+        </div>
+        <br />
+      </div>
+    </div>
+    <hr size="4" color="white" align="left" width="100%" />
+    <!--ligne blanche-->
+
+    <div id="bas">
+      © CAP - <a href="mention.html" style="color: #ff7300"> Mention Légal</a>
+      <br />
+      Tous droit reservé.
+    </div>
+    <script src="../JavaScript/ajout-panier.js"></script>
+  </body>
+</html>

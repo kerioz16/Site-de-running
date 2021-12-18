@@ -1,0 +1,453 @@
+body {
+  color: rgb(235, 235, 235); /*couleur du text */
+  text-shadow: 2px 2px 5px rgb(0, 0, 0); /*ombre du text */
+  font-size: larger; /*taille de police */
+  font-family: "Gill Sans", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background: url(image/background1.jpg) no-repeat center fixed; /*je definie l'image au centre fixe et sans repition */
+  -webkit-background-size: cover; /*l'image prend tout la page */
+  background-size: cover; /*l'image prend tout la page */
+}
+/*debut de la barre onglet */
+.header {
+  background: linear-gradient(#585858, #131313);
+  height: 50px;
+  width: 100%;
+  margin-left: 0px;
+}
+#navbar {
+  width: 100%;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px;
+  width: 250px; /*je donne 250 pixel d'ecart entre chaque lien */
+  transition: 0.5s; /*transition de 0.5 second pour grossir la case*/
+}
+nav ul li:hover  /*fonction hover pour le sur l'onglet passage de souris*/ {
+  width: 250px;
+  transition: 0.5s; /*transition de 0.5 seconde pour retrecir la case de 250px a 230px*/
+}
+ul li a {
+  color: seashell;
+  text-decoration: none;
+  transition: 0.5s; /*temp pour executer tout ça*/
+}
+ul li a:hover {
+  color: rgb(255, 132, 0); /*couleur du text au passage de la souris*/
+  background: rgba(
+    197,
+    197,
+    197,
+    0.118
+  ); /*couleur de l'arriere plan au passage de la souris*/
+  border-bottom: 4px solid rgba(255, 255, 255, 0.8); /*ligne blanche dans l'onglet*/
+  font-size: 17px; /*le taille du texte quand la souris passe dessus */
+  transition: 0.5s; /*temp pour executer tout ça*/
+}
+#submenu {
+  display: none;
+}
+li:hover #submenu {
+  display: inline-block;
+  background: #131313;
+  position: absolute;
+  align-content: center;
+}
+#submenu li {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu li {
+  margin-left: 3%;
+}
+.menu li a {
+  color: seashell;
+  text-decoration: none; /*j'enleve le soulignement des liens */
+  display: block;
+  line-height: 46px;
+  text-align: center; /*tu aligne le texte dans les onglet*/
+}
+#search {
+  padding: 12px;
+  text-align: right;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+input {
+  font-size: 17px;
+  border-radius: 8px 8px 8px 8px;
+}
+input[type="submit"]:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 123, 0);
+  transition: 0.3s;
+}
+input[type="submit"] {
+  border-color: #ff5e00;
+}
+input[type="search"]:hover {
+  transition: 0.3s;
+  border-color: rgb(255, 123, 0);
+}
+/*fin de la barre onglet*/
+#form {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 17px;
+}
+input {
+  transition: 0.3s;
+  text-align: left;
+}
+input:hover {
+  border-color: rgb(255, 123, 0);
+  background-color: rgb(233, 208, 184);
+  transition: 0.3s;
+  font-size: 18px;
+}
+input[type="reset"]:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 123, 0);
+  transition: 0.3s;
+}
+select {
+  font-size: 17px;
+  transition: 0.3s;
+  border-radius: 8px 8px 8px 8px;
+}
+select:hover {
+  background-color: rgb(233, 208, 184);
+  border-color: rgb(255, 123, 0);
+  transition: 0.3s;
+}
+#table {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 1500px;
+  height: 300px;
+  padding: 0px;
+}
+
+#table td {
+  width: 250px;
+  border: 0px;
+}
+
+#table td img {
+  width: 210px;
+  height: 200px;
+  transition: 0.5s;
+}
+#table td img:hover {
+  width: 260px;
+  height: 250px;
+  transition: 0.5s;
+}
+img[type="chaussure"] {
+  width: 300px;
+}
+
+td input[type="submit"] {
+  padding-bottom: 0px;
+}
+#partenaire {
+  margin-left: auto;
+  margin-right: auto;
+}
+#partenaire td {
+  width: 20px;
+}
+#partenaire td img {
+  width: 200px;
+  transition: 0.5s;
+}
+#partenaire td img:hover {
+  width: 250px;
+  transition: 0.5s;
+}
+#support {
+  margin-left: 10px;
+}
+#support img {
+  width: 70px;
+  margin-left: 10px;
+}
+#produit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  background-color: #585858;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+#image-produit {
+  padding: 2%;
+}
+#myimage {
+  border-radius: 8px;
+}
+#text {
+  margin-left: 0px;
+  padding: 5% 0;
+}
+#text ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 15px;
+}
+#text ul li:before {
+  display: inline-block;
+  content: "-";
+  width: 15px;
+  margin-left: -10px;
+}
+
+#bouton-produit {
+  border: 2px solid #ff5e00;
+}
+#produit a {
+  padding-top: 35px;
+  padding-left: 45px;
+}
+#produit p {
+  margin-left: auto;
+  margin-right: auto;
+}
+#page {
+  text-align: center;
+}
+#image-moncompte {
+  margin-left: auto;
+  text-align: center;
+  align-self: center;
+  padding-right: 40px;
+}
+#moncompte {
+  margin-right: 0px;
+}
+#entete {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  height: auto;
+}
+#bloc-connexion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  background-color: #585858;
+  width: 30%;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+#connexion {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+#bloc-connexion p {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 2px;
+  align-self: flex-end;
+}
+#bloc-connexion p a {
+  text-decoration: none;
+  color: #ff5e00;
+}
+#bloc-inscription {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  background-color: #585858;
+  width: 30%;
+  height: 430px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+#bloc-inscription p {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 2px;
+  align-self: flex-end;
+}
+#bloc-inscription p a {
+  text-decoration: none;
+  color: #ff5e00;
+}
+#icon-cap {
+  height: 50px;
+}
+#tout {
+  animation: reverse;
+}
+#titre_2 {
+  text-align: center;
+  padding-top: 100px;
+}
+#bloc-conseil {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  background-color: #585858;
+  width: 91%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+#titre-conseil {
+  background-color: #9e9d9d;
+  width: 97%;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 8px;
+  text-align: center;
+}
+#titre-conseil p {
+  align-self: center;
+}
+#petit-conseil {
+  background-color: #000000;
+  width: 80%;
+  height: 300px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 8px;
+  text-align: center;
+  border-color: #ff5e00;
+  border: 5px;
+}
+#petit-conseil p {
+  font-size: 22px;
+}
+#resumer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #d6813b;
+  width: 30%;
+  height: 400px;
+  padding-top: 50px;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 60px;
+}
+#resumer p {
+  font-size: larger;
+}
+#bloc-video {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #d6813b;
+  width: 55%;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-right: 60px;
+}
+#video {
+  margin-left: auto;
+  margin-right: auto;
+  width: 88%;
+  height: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#milieu {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#bloc-partenaire {
+  text-align: center;
+}
+
+#titre {
+  font-family: "Gill Sans", sans-serif;
+  margin-left: 10px;
+}
+
+#bloc {
+  height: 30%;
+  font-family: "Gill Sans", sans-serif;
+  margin-left: 10px;
+}
+
+#pied {
+  font-family: "Gill Sans", sans-serif;
+  height: 10%;
+  margin-left: 10px;
+}
+
+#acceuil {
+  font-family: "Gill Sans", sans-serif;
+  height: 10%;
+  margin-left: 10px;
+}
+
+#Boutique {
+  font-family: "Gill Sans", sans-serif;
+  height: 10%;
+  margin-left: 10px;
+}
+
+#Plan {
+  font-family: "Gill Sans", sans-serif;
+  height: 10%;
+  margin-left: 10px;
+}
+
+#bas hr {
+  font-family: "Gill Sans", sans-serif;
+  height: 10%;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+#Contact {
+  font-family: "Gill Sans", sans-serif;
+  height: 10%;
+}
+
+#tableau {
+  font-family: "Gill Sans", sans-serif;
+  height: 10%;
+}
+
+#formulaire {
+  font-family: "Gill Sans", sans-serif;
+  height: 10%;
+}
